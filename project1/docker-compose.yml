@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  app_project1:
+    image: ruby:2.7.1
+    ports:
+      - '11111:1111'
+    command: ruby -run -e httpd -- --bind-address=0.0.0.0 --port=1111
